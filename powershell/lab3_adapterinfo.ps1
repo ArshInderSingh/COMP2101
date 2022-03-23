@@ -1,0 +1,1 @@
+﻿get-ciminstance Win32_NetworkAdapterConfiguration | ? { $_.ipenabled -eq "true"}| format-table Description, Index, IPAddress, IPSubnet, DNSDomain, DNSServerSearchOrder
